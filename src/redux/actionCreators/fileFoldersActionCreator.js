@@ -118,7 +118,7 @@ export const updateFileData = (fileId, data) => (dispatch) => {
     .update({ data })
     .then(() => {
       dispatch(setFileData({ fileId, data }));
-      toast.sucess("File saved successfully!");
+      toast.success("File saved successfully!");
     })
     .catch(() => {
       toast.error("Something went wrong!");
