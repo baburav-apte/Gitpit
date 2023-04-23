@@ -101,7 +101,7 @@ export const createFile = (data, setSuccess) => (dispatch) => {
     .then(async (file) => {
       const fileData = await (await file.get()).data();
       const fileId = file.id;
-      toast.sucess("File created successfully!");
+      toast.success("File created successfully!");
       dispatch(addFile({ data: fileData, docId: fileId }));
       setSuccess(true);
     })
