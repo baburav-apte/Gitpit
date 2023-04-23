@@ -6,7 +6,7 @@ const HomePage = () => {
     <>
       <NavigationComponent />
       <h1 className="display-1 my-5 text-center">
-        Welome to Gitpit
+        Welcome to Gitpit
       </h1>
     </>
   );
