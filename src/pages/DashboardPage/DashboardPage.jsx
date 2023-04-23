@@ -39,7 +39,7 @@ const DashboardPage = () => {
     if (!isLoggedIn) {
       navigate("/");
     }
-  }, []);// removing  ",[]" fixies logout
+  });// removing  ",[]" fixies logout
 
   useEffect(() => {
     if (isLoading && userId) {
